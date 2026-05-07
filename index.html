@@ -42,7 +42,10 @@
         productName: "Automotive HMI Template",
         productVersion: "1.4.0",
         devicePixelRatio: window.devicePixelRatio, 
-      }).then((unityInstance) => {
+        }).then((unityInstance) => {
+          // 유니티 인스턴스를 전역 변수(window)에 할당
+          window.unityInstance = unityInstance;
+          console.log("Unity Loaded and Assigned to window.unityInstance");
       }).catch((message) => {
         alert(message);
       });
