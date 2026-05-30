@@ -43,6 +43,7 @@
         productVersion: "1.4.0",
         devicePixelRatio: window.devicePixelRatio, 
       }).then((unityInstance) => {
+		window.unityInstance = unityInstance;
       }).catch((message) => {
         alert(message);
       });
